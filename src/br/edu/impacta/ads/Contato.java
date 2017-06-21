@@ -10,39 +10,32 @@ public class Contato {
 		super();
 	}
 
-
 	public Contato(String nome, String telefone) {
 		super();
 		this.nome = nome;
 		this.telefone = telefone;
 	}
 
-
 	public String getNome() {
 		return nome;
 	}
-
 
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
 
-
 	public String getTelefone() {
 		return telefone;
 	}
-
 
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
 
-
 	@Override
 	public String toString() {
 		return "Contato [nome=" + nome + ", telefone=" + telefone + "]";
 	}
-
 
 	@Override
 	public int hashCode() {
@@ -52,7 +45,6 @@ public class Contato {
 		result = prime * result + ((telefone == null) ? 0 : telefone.hashCode());
 		return result;
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -74,7 +66,6 @@ public class Contato {
 		} else if (!telefone.equals(other.telefone))
 			return false;
 		return true;
-	}
-	
+	}	
 
 }
