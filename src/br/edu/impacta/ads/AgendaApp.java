@@ -3,14 +3,12 @@ package br.edu.impacta.ads;
 
 import static java.lang.System.out;
 
-import java.security.Security;
 import java.util.List;
 import java.util.Scanner;
 
 public class AgendaApp {
 	private static Scanner entrada = new Scanner(System.in);
 	
-	//private static List<Contato> contatos = new ArrayList<>();
 	private static IContatoDao dao = new ContatoDao();
 	
 	public static void main(String[] args) {
@@ -100,7 +98,7 @@ public class AgendaApp {
 //		List<Contato> resultado = new ArrayList<>();	
 //		for (Contato c: contatos) {
 //			if (nome.equals(c.getNome())) {
-//				resultado.add(c);
+//				resultado.add(c);  xxxx
 //			}
 //		}
 		List<Contato> resultado = dao.buscar(nome);
